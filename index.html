@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Library</h1>
+        <button id="addBookBtn">Add new book</button>
+    </nav>
+    <form class="invisible" action="" id="form">
+        <div>
+            <label for="title">Title</label>
+            <input id="title" name="title" type="text" maxlength="35" required>
+        </div>
+        <div>
+            <label for="author">Author</label>
+            <input id="author" name="author" type="text" maxlength="30" required>
+        </div>
+        <div>
+            <label for="pagesNumber">Number of pages</label>
+            <input id="pagesNumber" type="number" required>
+        </div>
+        <div id="radioBtns">
+            <div class="radio">
+                <input type="radio" id="readRadio" name="fav_language" value="true">
+                <label for="readRadio">Read</label><br>
+            </div>
+            <div class="radio">
+                <input type="radio" id="notReadRadio" name="fav_language" value="false">
+                <label for="notReadRadio">Not read</label><br>
+            </div>
+        </div>
+
+        <div id="formBtns">
+            <p class="invisible" id="inputsRequired">All inputs are required</p>
+            <button type="submit" form="form" id="addBtn">Add</button>
+            <button id="closeBtn">Close</button>
+        </div>
+
+    </form>
+
+    <div id="allBooks">
+
+
+    </div>
+
+    <img id="protoDeleteIcon" src="https://img.icons8.com/ios-filled/50/000000/delete-sign--v1.png" />
+
+    <svg id="protoSvg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path
+            d="M7.127 22.562l-7.127 1.438 1.438-7.128 5.689 5.69zm1.414-1.414l11.228-11.225-5.69-5.692-11.227 11.227 5.689 5.69zm9.768-21.148l-2.816 2.817 5.691 5.691 2.816-2.819-5.691-5.689z" />
+    </svg>
+    <script src="app.js"></script>
+</body>
+
+</html>
