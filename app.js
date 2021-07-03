@@ -58,7 +58,7 @@ function displayBooks(book) {
     cardBottomDiv.appendChild(readStatusDiv);
 
     const cancelIcon = document.createElement('img');
-    cancelIcon.setAttribute('src', 'cancelIcon.svg');
+    cancelIcon.setAttribute('src', 'images/cancelIcon.svg');
     titleDiv.appendChild(cancelIcon);
     titleDiv.appendChild(h2);
     authorDiv.appendChild(h3);
